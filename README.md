@@ -19,7 +19,7 @@ The difficulties may include:
 
 3. what is the output? how to present the findings and outputs so that people will be impressed. (High/Low risk, RUL, IoT AWS deployment and visualization, ...)
 
-![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/ds2.png)
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/Images/ds2.png)
 
 # Very Useful Links
 https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM
