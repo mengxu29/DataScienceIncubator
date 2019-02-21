@@ -75,6 +75,8 @@ LSTM network is especially appealing to the predictive maintenance due to its ab
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
 
 
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png)
+
 
 ## Model explanation 
 
