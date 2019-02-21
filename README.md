@@ -30,9 +30,9 @@ In the dataset directory there are training, validation and testing datasets. Th
 
 ## Data cleaning and preprocessing
 
-### remove null data
+### Remove null data
 
-### downsize sample of long time series data
+### Downsize sample of long time series data
 A reasonable limit of 250-500 time steps is often used in practice with large LSTM models. The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference.z
 
 ### Data transformatoin 
