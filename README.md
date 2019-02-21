@@ -43,7 +43,7 @@ The data is sampled every second. Resample time series data from one second to t
 
 ### Data transformatoin 
 
-Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
+Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. Transform the observations to have a specific scale.
 
 # Models
 ## Gated Recurrent Unit (GRU)
