@@ -62,6 +62,10 @@ Mainly there are two popular RNN model: GRU and LSTM
 
 I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/GRU.png">
+</p>
+
 # Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
 
