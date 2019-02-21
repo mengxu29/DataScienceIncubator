@@ -51,13 +51,9 @@ we re-formulate this question into two closely relevant questions and answer the
 
 2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
 
-## Recurrent Neural Network (RNN)
+## Gated Recurrent Unit (GRU)
 
-RNN can handle sequential data very well, RNN is very powerful for many tasks: speech recognition, translation, text processing, natural
-
-language processing (NLP). The big company actually use it for many products, like apple siri, google voice, etc.
-
-Mainly there are two popular RNN model: GRU and LSTM
+Recurrent Neural Network (RNN) can handle sequential data very well, RNN is very powerful for many tasks: speech recognition, translation, text processing, natural language processing (NLP). The big company actually use it for many products, like apple siri, google voice, etc. Mainly there are two popular RNN model: Gated Recurrent Unit (GRU) and Long Short Term Memory (LSTM)
 
 I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
