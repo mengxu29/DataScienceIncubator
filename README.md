@@ -27,19 +27,19 @@ In the dataset directory there are training, validation and testing datasets. Th
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg">
 </p>
 
-## 1. Data cleaning and preprocessing
+## Data cleaning and preprocessing
 
-### 1.1 remove null data
+### remove null data
 
-### 1.2 downsize sample of long time series data
+### downsize sample of long time series data
 A reasonable limit of 250-500 time steps is often used in practice with large LSTM models. The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference.z
 
-### 1.3 Data transformatoin 
+### Data transformatoin 
 
 Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. 
 Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
 
-# 1. Models
+# Models
 
 The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. 
 
@@ -61,7 +61,7 @@ Mainly there are two popular RNN model: GRU and LSTM
 
 I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
-# 2. Codes
+# Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
 
 <p align="center"> 
