@@ -18,6 +18,9 @@ In the dataset directory there are training, validation and testing datasets. Th
 
 with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
 
+https://github.com/mengxu29/DataScienceIncubator/blob/master/Images/sample1.jpg
+
+
 
 ## Data visualization
 
