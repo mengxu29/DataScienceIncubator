@@ -12,7 +12,7 @@ This proposed project will predict the fault behavior of an ion mill etch tool u
 
 The system is repariable. Also, the time when the system is shutdown for repair is recorded.
 
-# Data Cleaning and Preparation
+# Data
 
 In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series
 
@@ -23,6 +23,10 @@ https://github.com/mengxu29/DataScienceIncubator/blob/master/Images/sample1.jpg
 
 
 ## Data visualization
+
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg)
+
+
 
 
 
