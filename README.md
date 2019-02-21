@@ -14,21 +14,16 @@ The system is repariable. Also, the time when the system is shutdown for repair 
 
 # Data
 
-In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series
+In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
 
-with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample1.jpg)
 
-https://github.com/mengxu29/DataScienceIncubator/blob/master/Images/sample1.jpg
-
-
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample2.png)
 
 ## Data visualization
-
-![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg)
-
-
-
-
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg">
+</p>
 
 ## 1. Data preprocessing
 
@@ -40,7 +35,7 @@ A reasonable limit of 250-500 time steps is often used in practice with large LS
 The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference. 
 
 ### 1.5 Data transformatoin 
-Data Preparation
+
 Transform the time series into a supervised learning problem. Specifically, the organization of data into input and output patterns
 
 where the observation at the previous time step is used as an input to forecast the observation at the current time step
