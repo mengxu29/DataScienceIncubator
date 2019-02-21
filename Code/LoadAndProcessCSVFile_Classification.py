@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Feb 16 17:06:28 2019
-
-@author: huach
-"""
 
 import random
 random.seed(1234)
