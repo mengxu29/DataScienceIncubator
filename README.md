@@ -21,6 +21,8 @@ with “seconds” as the time unit, together with 22 sensor readings for each t
 
 ## Data visualization
 
+
+
 ## 1. Data preprocessing
 
 ### 1.1 Remove Nan data
@@ -39,14 +41,6 @@ where the observation at the previous time step is used as an input to forecast 
 Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1.
 
 These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
-
-
-
-### 1.6 New Data and Retrain the model
-Every time when a new machine is used, the data may have a very different distribution. 
-Then it maybe need a retraining for the mdoel
-
-https://medium.com/ibm-watson-data-lab/keeping-your-machine-learning-models-up-to-date-f1ead546591b
 
 ## 2. Data Preparation: Series to Supervised
 
