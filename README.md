@@ -73,7 +73,7 @@ Keras is a very popular library for deep learning. The code is based on Keras wi
 </p>
 
 
-## Result of training
+## Results of training
 Based on training datasets, the following pictures show the trend of loss function and accuracy.
 
 <p align="center"> 
@@ -84,7 +84,7 @@ Based on training datasets, the following pictures show the trend of loss functi
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
 </p>
 
-## Result of prediction
+## Results of prediction
 
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction.png">
@@ -94,4 +94,8 @@ Based on training datasets, the following pictures show the trend of loss functi
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction%20risk.jpg">
 </p>
 
+## Learned features
 
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/feature.jpg">
+</p>
