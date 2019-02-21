@@ -12,7 +12,7 @@ This proposed project will predict the fault behavior of an ion mill etch tool u
 
 The system is repariable. Also, the time when the system is shutdown for repair is recorded.
 
-# Data
+# Datasets
 
 In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
 
