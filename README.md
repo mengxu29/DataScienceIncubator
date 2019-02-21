@@ -10,7 +10,7 @@ Preventive maintenance can extend component lifespans and reduce unscheduled mai
 
 This proposed project will predict the fault behavior of an ion mill etch tool used in a wafer manufacturing process.
 
-The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
+The fundamental question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?”  this question can be re-formulated into two closely relevant questions and answer them using two different types of machine learning models:
 1. Supervised regression model: how long a machine will last before it fails?
 2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
 
