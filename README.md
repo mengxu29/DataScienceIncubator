@@ -16,7 +16,7 @@ The fundamental question to ask is “given these machine operation and failure 
 
 # Datasets
 
-In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
+In the dataset directory there are training, validation and testing datasets. The data consists of time series with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
 
 ![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample1.jpg)
 
