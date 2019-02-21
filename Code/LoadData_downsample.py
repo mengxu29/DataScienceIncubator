@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 15 00:44:00 2019
-
-@author: huach
-"""
-
-# -*- coding: utf-8 -*-
 
 import random
 random.seed(1234)
