@@ -40,17 +40,6 @@ The data is sampled every second. Resample time series data from one second to t
 Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
 
 # Models
-
-The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. 
-
-The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” 
-
-we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
-
-1. Supervised regression model: how long a machine will last before it fails?
-
-2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
-
 ## Gated Recurrent Unit (GRU)
 
 Recurrent Neural Network (RNN) can handle sequential data very well, RNN is very powerful for many tasks: speech recognition, translation, text processing, natural language processing (NLP). The big company actually use it for many products, like apple siri, google voice, etc. Mainly there are two popular RNN model: Gated Recurrent Unit (GRU) and Long Short Term Memory (LSTM)
