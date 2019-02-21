@@ -10,7 +10,9 @@ Preventive maintenance can extend component lifespans and reduce unscheduled mai
 
 This proposed project will predict the fault behavior of an ion mill etch tool used in a wafer manufacturing process.
 
-The system is repariable. Also, the time when the system is shutdown for repair is recorded.
+The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
+1. Supervised regression model: how long a machine will last before it fails?
+2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
 
 # Datasets
 
@@ -25,26 +27,17 @@ In the dataset directory there are training, validation and testing datasets. Th
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg">
 </p>
 
-## 1. Data preprocessing
+## 1. Data cleaning and preprocessing
 
-### 1.1 Remove Nan data
+### 1.1 remove null data
 
-### 1.2 Very Long Sequences for LSTM
-A reasonable limit of 250-500 time steps is often used in practice with large LSTM models.
+### 1.2 downsize sample of long time series data
+A reasonable limit of 250-500 time steps is often used in practice with large LSTM models. The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference.z
 
-The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference. 
+### 1.3 Data transformatoin 
 
-### 1.5 Data transformatoin 
-
-Transform the time series into a supervised learning problem. Specifically, the organization of data into input and output patterns
-
-where the observation at the previous time step is used as an input to forecast the observation at the current time step
-
-Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1.
-
-These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
-
-## 2. Data Preparation: Series to Supervised
+Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. 
+Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
 
 # 1. Models
 
