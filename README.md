@@ -44,7 +44,8 @@ Transform the time series into a supervised learning problem, where the observat
 
 Recurrent Neural Network (RNN) can handle sequential data very well, RNN is very powerful for many tasks: speech recognition, translation, text processing, natural language processing (NLP). The big company actually use it for many products, like apple siri, google voice, etc. Mainly there are two popular RNN model: Gated Recurrent Unit (GRU) and Long Short Term Memory (LSTM)
 
-I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
+I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.
+GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/diagram.png">
@@ -52,11 +53,6 @@ I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (o
 
 # Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
-
-<p align="center"> 
-<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
-</p>
-
 
 ## Results of training
 Based on training datasets, the following pictures show the trend of loss function and accuracy.
