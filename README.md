@@ -10,44 +10,37 @@ Preventive maintenance can extend component lifespans and reduce unscheduled mai
 
 This proposed project will predict the fault behavior of an ion mill etch tool used in a wafer manufacturing process.
 
-The system is repariable. Also, the time when the system is shutdown for repair is recorded.
+The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
+1. Supervised regression model: how long a machine will last before it fails?
+2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
 
-# Data Cleaning and Preparation
+# Datasets
 
-In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series
+In the dataset directory there are training, validation and testing datasets. The data consists of multiple multivariate time series with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
 
-with “seconds” as the time unit, together with 22 sensor readings for each time. The following pictures show a sample of the data:
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample1.jpg)
 
-https://github.com/mengxu29/DataScienceIncubator/blob/master/Images/sample1.jpg
-
-
+![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample2.png)
 
 ## Data visualization
+1000 time series data with 22 sensor readings
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg">
+</p>
 
+## Data cleaning and preprocessing
 
+### Remove null data
 
-## 1. Data preprocessing
+### Downsize sample of long time series data
+A reasonable limit of 250-500 time steps is often used in practice with large LSTM models. The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference.z
 
-### 1.1 Remove Nan data
+### Data transformatoin 
 
-### 1.2 Very Long Sequences for LSTM
-A reasonable limit of 250-500 time steps is often used in practice with large LSTM models.
+Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. 
+Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
 
-The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference. 
-
-### 1.5 Data transformatoin 
-Data Preparation
-Transform the time series into a supervised learning problem. Specifically, the organization of data into input and output patterns
-
-where the observation at the previous time step is used as an input to forecast the observation at the current time step
-
-Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1.
-
-These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
-
-## 2. Data Preparation: Series to Supervised
-
-# 1. Models
+# Models
 
 The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. 
 
@@ -67,15 +60,35 @@ language processing (NLP). The big company actually use it for many products, li
 
 Mainly there are two popular RNN model: GRU and LSTM
 
-I build a Long Short-Term Memory (LSTM) network to predict remaining useful life (or time-to-failure) of machine and its risk status.
+I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
-LSTM network is especially appealing to the predictive maintenance due to its ability at learning time series data.
-
-# 2. Codes
+# Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
 
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
+</p>
 
 
-## Model explanation 
+## Result of training
+Based on training datasets, the following pictures show the trend of loss function and accuracy.
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/loss.jpg">
+</p>
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
+</p>
+
+## Result of prediction
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction.png">
+</p>
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction%20risk.jpg">
+</p>
 
 
