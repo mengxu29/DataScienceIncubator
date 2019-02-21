@@ -66,9 +66,7 @@ language processing (NLP). The big company actually use it for many products, li
 
 Mainly there are two popular RNN model: GRU and LSTM
 
-I build a Long Short-Term Memory (LSTM) network to predict remaining useful life (or time-to-failure) of machine and its risk status.
-
-LSTM network is especially appealing to the predictive maintenance due to its ability at learning time series data.
+I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
 # 2. Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
@@ -87,6 +85,16 @@ Based on training datasets, the following pictures show the trend of loss functi
 
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
+</p>
+
+## Result of prediction
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction.png">
+</p>
+
+<p align="center"> 
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction%20risk.jpg">
 </p>
 
 
