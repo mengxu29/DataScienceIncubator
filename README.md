@@ -5,7 +5,8 @@ https://www.phmsociety.org/sites/phmsociety.org/files/PHM%20Data%20Challenge%202
 Predictive maintenance is a popular application of predictive analytics that can help business in several industries achieve high asset
 utilization and savings in operational costs.
 
-The goal of predictive maintenance is to predict when an asset may fail in the near future, and to estimate the remaining life (or time-to-failure) of an asset based on sensor data collected overtime to monitor the state of an equipment. Preventive maintenance can extend component lifespans and reduce unscheduled maintenance and labor costs, businesses can gain cost savings and competitive advantages.
+The goal of predictive maintenance is to predict when an asset may fail in the near future, and to estimate the remaining life (or time-to-failure) of an asset based on sensor data collected overtime to monitor the state of an equipment. 
+Preventive maintenance can extend component lifespans and reduce unscheduled maintenance and labor costs, businesses can gain cost savings and competitive advantages.
 
 This proposed project will predict the fault behavior of an ion mill etch tool used in a wafer manufacturing process.
 
