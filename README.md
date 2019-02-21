@@ -23,6 +23,7 @@ In the dataset directory there are training, validation and testing datasets. Th
 ![alt text](https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/sample2.png)
 
 ## Data visualization
+22 sensors
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/visualization.jpg">
 </p>
