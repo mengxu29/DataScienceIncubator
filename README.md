@@ -32,13 +32,12 @@ In the dataset directory there are training, validation and testing datasets. Th
 
 ### Remove null data
 
-### Downsize sample of long time series data
-A reasonable limit of 250-500 time steps is often used in practice with large LSTM models. The data is sampled every second. 200-500 time steps only cover a few minitues info, which is way not enough for inference.z
+### Resample of long time series data
+The data is sampled every second. Resample time series data from one second to ten seconds.
 
 ### Data transformatoin 
 
-Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. 
-Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
+Transform the time series into a supervised learning problem, where the observation at the previous time step is used as an input to forecast the observation at the current time step. Transform the observations to have a specific scale. Specifically, to rescale the data to values between -1 and 1. These transforms are inverted on forecasts to return them into their original scale before calculating and error score.
 
 # Models
 
@@ -63,7 +62,7 @@ Mainly there are two popular RNN model: GRU and LSTM
 I build a Gated Recurrent Unit (GRU) network to predict remaining useful life (or time-to-failure) of machine and its risk status.GRU network is especially appealing to the predictive maintenance due to its ability at learning time series data.
 
 <p align="center"> 
-<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/GRU.png">
+<img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/diagram.png">
 </p>
 
 # Codes
