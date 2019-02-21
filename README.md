@@ -10,7 +10,7 @@ Preventive maintenance can extend component lifespans and reduce unscheduled mai
 
 This proposed project will predict the fault behavior of an ion mill etch tool used in a wafer manufacturing process.
 
-The model uses sensor data to predict when the machine will fail in the future so that maintenance can be planned in advance. The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
+The question to ask is “given these machine operation and failure events history, can we predict when the machine will fail?” we re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
 1. Supervised regression model: how long a machine will last before it fails?
 2. Binary classification model: is this machine going to fail within one week? (failing: high risk; not failing: low risk)
 
@@ -51,10 +51,10 @@ GRU network is especially appealing to the predictive maintenance due to its abi
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/diagram.png">
 </p>
 
-# Codes
+## Codes
 Keras is a very popular library for deep learning. The code is based on Keras with Tensorflow as the back end.
 
-## Results of training
+# Results of training
 Based on training datasets, the following pictures show the trend of loss function and accuracy.
 
 <p align="center"> 
@@ -65,7 +65,7 @@ Based on training datasets, the following pictures show the trend of loss functi
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/accuracy.png">
 </p>
 
-## Results of prediction
+# Results of prediction
 
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction.png">
@@ -75,7 +75,7 @@ Based on training datasets, the following pictures show the trend of loss functi
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/prediction%20risk.jpg">
 </p>
 
-## Learned features
+# Learned features
 
 <p align="center"> 
 <img src="https://github.com/mengxu29/DataScienceIncubator/blob/master/pic/feature.jpg">
